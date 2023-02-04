@@ -1,7 +1,7 @@
 import streamlit as st
 from revChatGPT.Official import Chatbot
 
-api_key = st.secrets("OPENAI_API_KEY")
+api_key = st.secrets["OPENAI_API_KEY"]
 chatbot = Chatbot(api_key)
 
 def ask():
